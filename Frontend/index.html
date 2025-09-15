@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hackathon & Contest Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>🚀 Hackathon & Contest Tracker</h1>
+    <div class="filters">
+      <input type="text" id="search" placeholder="Search by title or platform...">
+
+      <select id="type">
+        <option value="">All Types</option>
+        <option value="hackathon">Hackathon</option>
+        <option value="contest">Contest</option>
+      </select>
+
+      <select id="status">
+        <option value="">All Status</option>
+        <option value="upcoming">Upcoming</option>
+        <option value="live">Live</option>
+        <option value="past">Past</option>
+      </select>
+
+      <button id="applyFilters">🔍 Filter</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="results">
+      <h2>Results</h2>
+      <div id="cards" class="cards"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Built with ❤️ using FastAPI + Vanilla JS</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
