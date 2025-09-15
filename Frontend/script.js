@@ -1,5 +1,5 @@
 async function fetchContests(type = "", status = "", search = "") {
-  let url = "http://127.0.0.1:8000/api/all";
+  let url = "https://contest-hackathon-tracker.onrender.com/api/all";
   const params = [];
   if (type) params.push(`type=${type}`);
   if (status) params.push(`status=${status}`);
